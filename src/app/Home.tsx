@@ -3,10 +3,10 @@ import { View } from "react-native";
 import { Header } from "@/components/Header";
 import { Title } from '@/components/Title'
 import { ButtonIcon } from "@/components/ButtonIcon";
-import { BottomRoutesProps } from "@/routes/BottomRoutes";
+import { DrawerRoutesProps } from "@/routes/DrawerRoutes";
 
 
-export function Home({ navigation }: BottomRoutesProps<'home'>) {
+export function Home({ navigation }: DrawerRoutesProps<'home'>) {
 
     return (
         <View style={{ flex: 1, padding: 32, paddingTop: 54 }}>
