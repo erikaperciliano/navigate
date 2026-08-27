@@ -3,9 +3,14 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Product } from "@/app/Product";
 import { Home } from "@/app/Home";
 
-const Stack = createNativeStackNavigator()
+export type StackRoutesList = {
+    home: undefined
+    product: undefined
+}
 
-export function StackRouters() {
+const Stack = createNativeStackNavigator<StackRoutesList>()
+
+export function StackRoutes() {
     return (
         <Stack.Navigator initialRouteName="home">
             <Stack.Screen name="home" component={Home} />
